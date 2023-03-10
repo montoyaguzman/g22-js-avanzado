@@ -4,7 +4,7 @@ const server = http.createServer((request, response) => {
     const status = '200'; //status Http list
     const mymeType = { 'Content-type': 'text/html' } // myme types list
     response.writeHead(status, mymeType);
-    response.write('<html> <body> hola desde el servidor node </body> </html>');
+    response.write('<html> <body> hola desde el servidor node en la gen 22 </body> </html>');
     response.end();
 });
 
