@@ -19,7 +19,14 @@ class PokemonServices {
     }
 
     queryAll(){
-        return this.pokemones;
+
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(this.pokemones); // try
+                // reject catch
+            }, 1000);
+        })
+        
     }
 
     queryById(){
