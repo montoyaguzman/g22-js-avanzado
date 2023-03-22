@@ -39,7 +39,7 @@ app.post('/create-pokemon', (req, res) => {
     res.status(201).send();
 });
 
-app.put('/edit-pokemon/:id', (req, res) => {
+app.post('/edit-pokemon/:id', (req, res) => {
     const id = req.params.id;
     const newPokemon = req.body;
     console.log('newPokemon: ', newPokemon);
@@ -48,4 +48,23 @@ app.put('/edit-pokemon/:id', (req, res) => {
     console.log('pokemons', pokemons);
     res.status(200).send();
 });
+
+app.post('/create-pokemon', (req, res) => {
+    const newPokemon = req.body;
+    console.log('newPokemon: ', newPokemon);
+    pokemons.push(newPokemon);
+    console.log('pokemons', pokemons);
+    res.status(201).send();
+});
+
+app.post('/edit-pokemon/:id', (req, res) => {
+    const id = req.params.id;
+    const newPokemon = req.body;
+    console.log('newPokemon: ', newPokemon);
+    const index = pokemons.findIndex(pokemon => pokemon.id === parseInt(id));
+    pokemons[index] = newPokemon;
+    console.log('pokemons', pokemons);
+    res.status(200).send();
+});
+
 
