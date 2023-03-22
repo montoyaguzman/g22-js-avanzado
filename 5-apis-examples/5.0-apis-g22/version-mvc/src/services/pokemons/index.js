@@ -14,7 +14,7 @@ class PokemonServices {
         ];
     }
 
-    create(){
+    createPokemon(){
         const newPokemon = req.body;
         console.log('newPokemon: ', newPokemon);
         pokemons.push(newPokemon);
@@ -22,8 +22,8 @@ class PokemonServices {
         res.status(201).send();
     }
 
-    query(){
-        res.status(200).json(pokemons);
+    queryAll(){
+        res.status(200).json(this.pokemons);
     }
 
     queryById(){
@@ -50,17 +50,10 @@ class PokemonServices {
 
     }
 
-    delete(){
+    deletePokemon(){
 
     }
 
 }
 
-module.exports = {
-    create,
-    query,
-    queryById,
-    editPartial,
-    editComplete,
-    delete
-}
+module.exports = PokemonServices;
