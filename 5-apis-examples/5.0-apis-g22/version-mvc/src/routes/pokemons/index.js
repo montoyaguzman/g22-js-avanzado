@@ -1,19 +1,18 @@
 const express = require('express');
-const PokemonService = require('../../services/pokemons/index');
-const pokemonService = new PokemonService();
+const { get, getById, create, editComplete, editPartial, deletePokemon } = require('../../controllers/pokemons/index')
 const pokemonRouter = express.Router();
 
-pokemonRouter.get('/list', pokemonService.queryAll);
+pokemonRouter.get('/list', get);
 
-pokemonRouter.get('/list/:id/', pokemonService.queryById);
+pokemonRouter.get('/list/:id/', getById);
 
-pokemonRouter.post('/create', pokemonService.createPokemon);
+pokemonRouter.post('/create', create);
 
-pokemonRouter.patch('/edit/:id', pokemonService.editPartial);
+pokemonRouter.patch('/edit/:id', editPartial);
 
-pokemonRouter.put('/edit/:id', pokemonService.editComplete);
+pokemonRouter.put('/edit/:id', editComplete);
 
-pokemonRouter.delete('/delete/:id', pokemonService.deletePokemon);
+pokemonRouter.delete('/delete/:id', deletePokemon);
 
 module.exports = pokemonRouter;
 

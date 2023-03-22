@@ -14,16 +14,12 @@ class PokemonServices {
         ];
     }
 
-    createPokemon(){
-        const newPokemon = req.body;
-        console.log('newPokemon: ', newPokemon);
-        pokemons.push(newPokemon);
-        console.log('pokemons', pokemons);
-        res.status(201).send();
+    createPokemon(newPokemon){
+        this.pokemones.push(newPokemon);
     }
 
     queryAll(){
-        res.status(200).json(this.pokemons);
+        return this.pokemones;
     }
 
     queryById(){
