@@ -13,14 +13,17 @@ let pokemons = [
     { id: 3, name: 'charmander', type: 'fire' },
 ];
 
+// hello world
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+// getAll
 app.get('/list-pokemon', (req, res) => {
     res.status(200).json(pokemons);
 });
 
+// getById
 app.get('/list-pokemon/:id/', (req, res) => {
     const id = req.params.id;
     console.log('req.params: ', id);
@@ -31,6 +34,7 @@ app.get('/list-pokemon/:id/', (req, res) => {
     res.status(200).json(foundedPokemon);
 });
 
+// create
 app.post('/create-pokemon', (req, res) => {
     const newPokemon = req.body;
     console.log('newPokemon: ', newPokemon);
@@ -39,7 +43,8 @@ app.post('/create-pokemon', (req, res) => {
     res.status(201).send();
 });
 
-app.post('/edit-pokemon/:id', (req, res) => {
+// editComplete
+app.put('/edit-pokemon/:id', (req, res) => {
     const id = req.params.id;
     const newPokemon = req.body;
     console.log('newPokemon: ', newPokemon);
@@ -49,22 +54,22 @@ app.post('/edit-pokemon/:id', (req, res) => {
     res.status(200).send();
 });
 
-app.post('/create-pokemon', (req, res) => {
-    const newPokemon = req.body;
-    console.log('newPokemon: ', newPokemon);
-    pokemons.push(newPokemon);
-    console.log('pokemons', pokemons);
-    res.status(201).send();
+// editPartial
+app.patch('/edit-pokemon/:id', (req, res) => {
+    /**
+     * Reto
+     * Crear un endpoint que modifique solo el name y el type 
+     * del pokemon
+     *  */ 
 });
 
-app.post('/edit-pokemon/:id', (req, res) => {
-    const id = req.params.id;
-    const newPokemon = req.body;
-    console.log('newPokemon: ', newPokemon);
-    const index = pokemons.findIndex(pokemon => pokemon.id === parseInt(id));
-    pokemons[index] = newPokemon;
-    console.log('pokemons', pokemons);
-    res.status(200).send();
+// delete
+app.delete('/edit-pokemon/:id', (req, res) => {
+     /**
+     * Reto
+     * Crear un endpoint elimine un pokemon del arreglo
+     * de acuerdo al id recibido como parametro de la request
+     *  */
 });
 
 
