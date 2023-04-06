@@ -28,7 +28,7 @@ Node es un entorno multiplataforma para ejecutar JavaScript fuera del navegador,
 node -v
 npm -v
 
-**Versiones válidas:** 12.x.x, 14.x.x y 16.x.x
+**Versiones válidas:** 14.x.y, 16.x.y y 18.x.y
 
 #### **Que se puede hacer con node**
 
@@ -48,32 +48,35 @@ Dentro de node se utilizan los módulos y las callbacks.
 
   - Commun JS.
   - ES6 Imports.
+
 - **Callback:** Es una funcion que se pasa como parametro a otra funcion.
 
 #### Diferencias entre Node y JS
 
 **Javascript**
 
-* Funciona en el navegador.
-* JS + web api.
-  * fetch.
-  * settimeout.
-  * addeventlistener.
-  * localstorage.
+- Funciona en el navegador.
+- JS + web api.
+  - fetch.
+  - settimeout.
+  - addeventlistener.
+  - localstorage.
 
 **Node**
 
-* Funciona en el servidor.
-* JS + modulos de node.
-  * http.
-  * os.
-  * fs.
-  * global.
-  * path.
+- Funciona en el servidor.
+- JS + modulos de node.
+  - http.
+  - os.
+  - fs.
+  - global.
+  - path.
 
 **Modelo cliente servidor**
 
 Es un modelo de arquitectura donde mediante ciertos procolos existen la comunicación en internet. Por un lado, el servidor es una aplicación que ofrece un servicio, mientras que un cliente es quien pide el servicio.
+
+![1680039423585](image/readme/1680039423585.png)
 
 **Path**
 
@@ -114,8 +117,8 @@ Es la dirección de mi propio computador (http://localhost:8080), también se le
 
 Node package manager es un manejador de paquetes de node y gestor de dependencias de proyectos npm. Se compone de:
 
-* Un repositorio de paquetes.
-* Un CLI para interactuar con el repo y el proyecto.
+- Un repositorio de paquetes.
+- Un CLI para interactuar con el repo y el proyecto.
 
 #### **Paquetes**
 
@@ -127,9 +130,9 @@ Son comandos propios que se pueden agregar al package.json para poderlos ejercut
 
 Estructura de un proyecto npm
 
-* **node_modules:** Carpeta donde se instalan las dependencias, normalmente está carpeta se agrega al .gitignore.
-* **package.json:** Guardan las dependencias y los comandos de node.
-* **package-lock.json:** Guarda un snapshot de las dependencias que se instalaron en un determinado momento.
+- **node_modules:** Carpeta donde se instalan las dependencias, normalmente está carpeta se agrega al .gitignore.
+- **package.json:** Guardan las dependencias y los comandos de node.
+- **package-lock.json:** Guarda un snapshot de las dependencias que se instalaron en un determinado momento.
 
 #### **Listado de comandos npm**
 
@@ -166,15 +169,15 @@ npm run myCommand
 
 #### Otros gestores de dependencias
 
-* Maven.
-* Bower.
-* Gradlew.
-* Yarn.
+- Maven.
+- Bower.
+- Gradlew.
+- Yarn.
 
 #### Tipos de licencias de software
 
-* MIT.
-* ISC.
+- MIT.
+- ISC.
 
 ### Node para front y back end.
 
@@ -182,18 +185,18 @@ A continuación se presenta un listado de los framework front y back mas popular
 
 #### **Frameworks back end**
 
-* [ExpressJS](https://expressjs.com/es/guide/routing.html).
-* [Hapi](https://hapi.dev/tutorials/?lang=en_US).
-* [Koa](https://devdocs.io/koa/).
-* [Fastify](https://www.fastify.io/docs/latest/).
+- [ExpressJS](https://expressjs.com/es/guide/routing.html).
+- [Hapi](https://hapi.dev/tutorials/?lang=en_US).
+- [Koa](https://devdocs.io/koa/).
+- [Fastify](https://www.fastify.io/docs/latest/).
 
 #### **Frameworks front end**
 
-* [Gatsby](https://www.gatsbyjs.com/docs/).
-* [EJS](https://ejs.co/#docs).
-* [Nuxt](https://nuxtjs.org/docs/get-started/installation).
-* [Next](https://nextjs.org/docs).
-* [Hbs](https://bluuweb.github.io/node/20-hbs/).
+- [Gatsby](https://www.gatsbyjs.com/docs/).
+- [EJS](https://ejs.co/#docs).
+- [Nuxt](https://nuxtjs.org/docs/get-started/installation).
+- [Next](https://nextjs.org/docs).
+- [Hbs](https://bluuweb.github.io/node/20-hbs/).
 
 #### **Semantic Versión**
 
@@ -201,9 +204,9 @@ Es un conjunto simple de reglas y requerimientos que dictan cómo asignar e incr
 
 Dado un número de versión **MAJOR.MINOR.PATCH**, se incrementa:
 
-* La versión **MAJOR** cuando realizas un cambio incompatible en el proyecto.
-* La versión **MINOR** cuando añades funcionalidad que compatible con versiones anteriores.
-* La versión **PATCH** cuando reparas errores compatibles con versiones anteriores.
+- La versión **MAJOR** cuando realizas un cambio incompatible en el proyecto.
+- La versión **MINOR** cuando añades funcionalidad que compatible con versiones anteriores.
+- La versión **PATCH** cuando reparas errores compatibles con versiones anteriores.
 
 ### Arquitectura de software.
 
@@ -211,12 +214,12 @@ Es la estructura y forma en que los componentes de software o hardware se distri
 
 **Arquitecturas comunes**
 
-* Cliente servidor.
-* De tres niveles.
-* Model View Controller: MVC.
-* Dirigida por eventos.
-* Microservicios.
-* Serverless.
+- Cliente servidor.
+- De tres niveles.
+- Model View Controller: MVC.
+- Dirigida por eventos.
+- Microservicios.
+- Serverless.
 
 ### Stacks de desarrollo web.
 
@@ -224,11 +227,11 @@ Un **stack** es el conjunto de tecnologías utilizadas para construir una aplica
 
 #### **Stacks populares**
 
-* LAMP.
-* ASP.NET.
-* MEAN.
-* MERN.
-* MEVN.
+- LAMP.
+- ASP.NET.
+- MEAN.
+- MERN.
+- MEVN.
 
 **Web components**
 Encapsular funcionalidad en elementos especificos que sean reutilizables.
@@ -236,38 +239,38 @@ Encapsular funcionalidad en elementos especificos que sean reutilizables.
 **Custom tag**
 El nombre de la tag utilizada para un webcomponent. Ejemplos:
 
-* `<my-menu>`
-* `<Mymenu>`
+- `<my-menu>`
+- `<Mymenu>`
 
 #### Lenguajes de programación
 
-* Java.
-* JavaScript.
-* Php.
-* Python.
-* Go.
+- Java.
+- JavaScript.
+- Php.
+- Python.
+- Go.
 
 #### Gestores de BD (SQL)
 
-* SQL.
-* Postgres.
-* Oracle.
-* MSSQLServer.
-* MariaDB.
-* MySQLalg.
+- SQL.
+- Postgres.
+- Oracle.
+- MSSQLServer.
+- MariaDB.
+- MySQLalg.
 
 #### Gestores de BD (No SQL)
 
-* Mongo.
-* DynamoDB.
-* Firebase.
-* Elasticsearchalg.
+- Mongo.
+- DynamoDB.
+- Firebase.
+- Elasticsearchalg.
 
 #### Servicios de cloud
 
-* Azure.
-* AWS.
-* Google Cloud.
+- Azure.
+- AWS.
+- Google Cloud.
 
 ### Asincronía y Event Loop.
 
@@ -285,24 +288,24 @@ Cuando el event loop difiere el código y lo pone en espera, puede causar afecta
 
 **Ejemplo de operaciones asíncronas**
 
-* Consulta una API.
-* Crear archivos.
-* Acceso a BD.
+- Consulta una API.
+- Crear archivos.
+- Acceso a BD.
 
 #### **Formas de manejar la asíncronia**
 
 - **Callbacks:** Consiste en pasar una función como parámetro y ejecutarla en el momento que lo necesitemos.
-- **Promesas:** Se envuelve el código asincrono en el objecto **new Promise**.  Se basan en 3 estados: cuándo se lanza la petición (pending) y sus posibles respuestas (resolve y reject).
+- **Promesas:** Se envuelve el código asincrono en el objecto **new Promise**. Se basan en 3 estados: cuándo se lanza la petición (pending) y sus posibles respuestas (resolve y reject).
 - **Async await (ES6):** Función con la sugar syntaxis de es6 y simula que el código es asíncrono (por detrás sigue siendo una promesa).
 
 ### Comparativa entre Node vs JavaScript
 
-* Ambos se basan en 0 retraso.
-* No hay temporizador (setTimeout y setInterval).
-* No hay manejo de eventos (eventListener).
-* No hay solicitudes Ajax (consumo de API’s).
-* Navegadores usan Libevent.
-* Node usa Libuv.
+- Ambos se basan en 0 retraso.
+- No hay temporizador (setTimeout y setInterval).
+- No hay manejo de eventos (eventListener).
+- No hay solicitudes Ajax (consumo de API’s).
+- Navegadores usan Libevent.
+- Node usa Libuv.
 
 ### Conceptos de una API.
 
@@ -339,26 +342,26 @@ Application Programming Interface son mecanismos que permiten a dos componentes 
 
 #### Conceptos de una API
 
-* **Client:** Es quien realiza la petición.
-* **Request:** Petición http conformada por url, params, payload.
-* **Url:** Dirección de internet.
-* **Payload:** Información que va en el body de la request.
-* **Método o verbo:** Es la acción (GET, POST, PUT, PATCH y DELETE) con la que se accede a un endpoint.
-* **Recurso:** Es el endpoint al que llegamos en la API.
-* **Response:** Respuesta de la API.
-* **Server:** Es quien responde la petición.
+- **Client:** Es quien realiza la petición.
+- **Request:** Petición http conformada por url, params, payload.
+- **Url:** Dirección de internet.
+- **Payload:** Información que va en el body de la request.
+- **Método o verbo:** Es la acción (GET, POST, PUT, PATCH y DELETE) con la que se accede a un endpoint.
+- **Recurso:** Es el endpoint al que llegamos en la API.
+- **Response:** Respuesta de la API.
+- **Server:** Es quien responde la petición.
 
 #### **Listado de protocolos**
 
-* TCP/IP.
-* HTTP.
-* HTTPS.
-* FTP.
-* SMTP.
-* IMAP.
-* POP.
-* SSL.
-* TLS.
+- TCP/IP.
+- HTTP.
+- HTTPS.
+- FTP.
+- SMTP.
+- IMAP.
+- POP.
+- SSL.
+- TLS.
 
 [Listado completo de puertos](https://docs.opencloud.cl/tutoriales/servidores/lista-de-puertos-mas-comunmente)
 
@@ -366,35 +369,35 @@ Application Programming Interface son mecanismos que permiten a dos componentes 
 
 **100 Information**
 
-* 100 Continue
+- 100 Continue
 
 **200 Success**
 
-* 200 OK
-* 201 Created
-* 202 Accepted
-* 204 No content
+- 200 OK
+- 201 Created
+- 202 Accepted
+- 204 No content
 
 **300 Redirección**
 
-* 304 Not modified
+- 304 Not modified
 
 **400 Client Errors**
 
-* 400 Bad request
-* 401 Unauthorized
-* 403 Forbidden
-* 404 Not found
-* 405 Not allowed method
-* 408 Request timeout
-* 409 Conflict
+- 400 Bad request
+- 401 Unauthorized
+- 403 Forbidden
+- 404 Not found
+- 405 Not allowed method
+- 408 Request timeout
+- 409 Conflict
 
 **500 Server Errors**
 
-* 500 Internal server error
-* 501 Not implemented
-* 503 Service unavailable
-* 504 Gate timeout
+- 500 Internal server error
+- 501 Not implemented
+- 503 Service unavailable
+- 504 Gate timeout
 
 [Listado completo de estatus http.](https://developer.mozilla.org/es/docs/Web/HTTP/Status)
 
@@ -406,21 +409,21 @@ Es una “evolución” de SOAP (servicios web). REST es una interfaz para conec
 
 Es una serie de principios que las API siguen para “volverse” API REST, cuándo cumplen todos los principios, se les conoce como API Restful.
 
-* Client.
-* Request.
-* Contrato.
-* Response.
-* Server.
+- Client.
+- Request.
+- Contrato.
+- Response.
+- Server.
 
 #### **Contrato de un API**
 
 Es un conjunto de acuerdos entre cliente y servidor para establecer la comunicación.
 
-* Interfaz.
-* Método.
-* Body y parametros (si aplican).
-* Estatus de respuesta.
-* Formato de intercambio de datos.
+- Interfaz.
+- Método.
+- Body y parametros (si aplican).
+- Estatus de respuesta.
+- Formato de intercambio de datos.
 
 ### ExpressJS.
 
@@ -456,12 +459,12 @@ Documentación de arquitectura node.
 
 ### Deploys.
 
-* Heroku.
-* Google App Engine.
-* Back4App.
-* Linode.
-* Digital Ocean.
-* Aws.
+- Heroku.
+- Google App Engine.
+- Back4App.
+- Linode.
+- Digital Ocean.
+- Aws.
 
 ## Notas adicionales
 
@@ -474,18 +477,41 @@ Es un [lenguaje de marcado ligero](https://es.wikipedia.org/wiki/Lenguajes_de_ma
 1024 megabytes = 1 gygabytes
 1024 gygabites = 1 terabytes
 
-### Comandos Terminal
+### Terminal
 
-El **CMD** es la línea de comandos basada en MS-DOS para windows, mientras que la **terminal** es la línea de comandos de unix/lunix (kernel de mac os y algunas distribuciones linux).
+La terminal o consola es una forma generalizada de llamar a la interfaz de línea de comandos: una pantalla. Sirve para escribir comandos con los que ordenamos al sistema realizar acciones concretas.
 
-Listado de comando
+- [Guía para la Terminal enfocado a desarrolladores Frontend](https://www.joshwcomeau.com/javascript/terminal-for-js-devs/).
+
+**Path**
+
+Una ruta o path indica una ubicación a nivel de carpeta de algun fichero dentro del
+sistema de archivos.
+
+#### **Ejemplos de path**
+
+```
+/# Raiz
+/
+
+/# Significa ahi mismo
+./
+
+/# Regresar un nivel de carpetas../
+../../
+
+/# Ir la carpeta home
+~/
+```
+
+#### Uso de comandos básicos
 
 ```
 # imprime el path en el que se encuentra
 pwd
 
 # moverse entre carpetas
-cd
+cd path
 
 # listar carpetas y archivos que hay en el directorio actual
 ls
@@ -502,56 +528,66 @@ rmdir folderName
 # eliminar archivos
 rm fileName.txt
 
-# comprobar conexión a internet
-ping www.google.com
-
 # limpiar la pantalla
 clear
-
 ```
 
-### [Comandos Git](git.md)
-
-#### Commits Atómicos
-
-Consiste en realizar un commit por un solo objetivo. Es decir, no mezclar muchas soluciones en el mismo commit.
-
-#### Conventional Commits
-
-Es una especificación sobre como escribir mensajes de confirmación (commits).
-
-**Estructura**
+#### **Ejemplos de uso del comando cd**
 
 ```
-[optional scope]: [optional body][optional footer(s)]
+cd ..
+cd ..
+cd ..
+cd myFolder
+cd ../../../desktop
+cd ~/
+cd ./
 ```
 
-**Tipos principales**
+#### **Otros comandos**
 
-* feat: Nuevas caracteristicas.
-* chore: Cosas que no aportan un req funcional pero posiblemente si un req no funcional.
-* fix: Correccion de errores.
-* docs: Commits con documentacion o comentarios.
-* style: Estructura de carpetas y nombrado.
+```
+# comprobar conexion a un dominio/ip
+ping www.google.com
+
+
+# editor nano
+nano archivo.txt
+
+# ver un archivo
+cat archivo.txt
+```
+
+**NOTA:** ctrl + c (detiene procesos en la terminal).
+
+Cuando un comando lleva -x y letras son PARAMETROS de como se debe ejecutar.
+
+### Git
+
+Git es un sistema de control de versiones.
+
+#### Configuraciones iniciales
+
+```
+# establecer un usuario global
+git config --global user.name "juanito perez"
+
+
+# establecer un correo global
+git config --global user.email juanito.perez@example.com
+
+# inicializar una carpeta como repositorio
+git init
+```
 
 #### Información del repo
 
 ```
-# ver estado del working directory y staging area
+# ver estado del working directory y/o staging area
 git status
 
 # ver historial de commits
 git log --oneline
-```
-
-#### Generar llave ssh
-
-```
-# generar ssh key
-ssh-keygen
-
-# ver llave p[ublica
-cat ~/.ssh/id_rsa.pub
 ```
 
 #### Hacer un commit
@@ -568,81 +604,14 @@ git commit -m "conventionalCommitScope: mi mensaje"
 
 ```
 
-#### Semantica de mensajes "commit"
-
-Un pequeño cambio en nuestros mensajes commit  puede convertirnos en mejores programadores.
-
-Formato: `<tipo>(<alcance>): <asunto>`
-
-`<alcance>` es opcional
-
-## Ejemplo
-
-```
-feat: add hat wobble
-^--^  ^------------^
-|     |
-|     +-> Resumen en tiempo presente.
-|
-+-------> Tipo: chore(tarea), docs(documentos), feat(logro), fix(corrección), refactor(refactorización), style(estilo), or test(prueba).
-```
-
-Mas ejemplos:
-
-- `feat`: (nueva función para el usuario, no una nueva función para el script de compilación)
-- `fix`: (corrección de errores para el usuario, no una corrección para un script de compilación)
-- `docs`: (cambios en la documentación)
-- `style`: (formato, falta de punto y coma, etc.; no hay cambio de código de producción)
-- `refactor`: (refactorización de código de producción, por ejemplo, cambio de nombre de una variable)
-- `test`: (agregando pruebas faltantes, refactorizando pruebas; sin cambio de código de producción)
-- `chore`: (actualización de tareas grunt, etc.; sin cambio de código de producción)
-
-Referencias:
-
-- https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
-- https://www.conventionalcommits.org/
-- https://seesparkbox.com/foundry/semantic_commit_messages
-- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
-
-Esta es una traduccion al español de [Josh Buchea] (https://gist.github.com/joshbuchea) por [Daniel Gloria](https://gist.github.com/dannielgloria).
-
-#### Remoto
-
-```
-# ver los repos remotos a los que esta conectado el repo local
-git remote -v
-
-# bajar cambios
-git pull origin branchName
-
-# subir cambios
-git push origin branchName
-
-# subir cambios de una rama nueva para el remoto
-git push -u origin branchName
-
-# obtener los cambios de una rama remota y cambiarse a esa rama
-git fetch && git checkout develop
-
-#  bajar cambios de una rama remota a una local (cuando ya existe)
-git pull origin branchName
-
-# agregar una direccion remoto (origin)
-git remote add origin myUrl
-
-# modificar una direccion remoto (origin)
-git remote set-url origin myUrl
-
-```
-
 #### Administración de ramas
 
 ```
 # ver rama en la que se encuentra el head
-git branch 
+git branch
 
 # crea una rama nueva
-git branch newBranchName 
+git branch newBranchName
 
 # cambiarse a una rama con el nombre nombreRama
 git checkout branchName
@@ -651,7 +620,7 @@ git checkout branchName
 git checkout -b newBranchName
 
 # crear y cambiarse a una nueva rama
-git switch -c newBranchName 
+git switch -c newBranchName
 
 # eliminar una rama
 git branch -D branchName
@@ -680,14 +649,92 @@ git stash pop
 
 [Más info](https://www.conventionalcommits.org/en/v1.0.0/)
 
-#### **VSCode como editor de git**
+#### Buenas practicas para mensajes de commits
+
+##### Commits Atómicos
+
+Consiste en realizar un commit por un solo objetivo. Es decir, no mezclar muchas soluciones en el mismo commit.
+
+##### Conventional Commits
+
+Es una especificación sobre como escribir mensajes de confirmación (commits).
+
+**Estructura una línea**
 
 ```
-git config --global core.editor"visual studio --wait"
-git commit
-// ir a vscode a escribir el mensaje, una vez escrito guardar y cerrar.
-// regresar a la consola a comprobar el commit
+[optional scope]: [optional body][optional footer(s)]
+```
 
+**Esctructura multilínea**
+
+```
+feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-> Resumen en tiempo presente (no deberia ser un listado).
+|
++-------> Tipo: chore(tarea), docs(documentos), feat(logro), fix(corrección), refactor(refactorización), style(estilo), or test(prueba).
+
+[optional footer(s)]
+```
+
+**Tipos principales**
+
+- **feat:** Nuevas funcionalidades.
+- **chore:** Cosas que no aportan un requerimiento funcional, generalmente son requerimientos no funcionales.
+- **fix:** Corrección de errores.
+- **docs:** Documentación o comentarios.
+- **style:** Cambios de legibilidad o formateo de código que no afecta a funcionalidad.
+- **refactor:** Modificaciones de código o arquitectura que no corrige errores ni añade funcionalidad, pero mejora la escritura y optimiza la funcionalidad.
+- **test:** Para añadir o arreglar tests.
+
+**Referencias**
+
+- [Semantic commit messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
+- [Conventional commits](https://www.conventionalcommits.org/).
+- [Karma](http://karma-runner.github.io/1.0/dev/git-commit-msg.html).
+
+#### Github
+
+Github es el repositorio remoto a donde podemos respaldar el codigo. Los siguientes comandos funcioan para conectarse a cualquier repositorio remoto, nos sólo a github, por ejemplo gitlab o bitbucket.
+
+#### Generar llave ssh
+
+```
+# generar ssh key
+ssh-keygen
+
+# ver llave pública
+cat ~/.ssh/id_rsa.pub
+```
+
+#### Conexión al repo remoto
+
+```
+# ver los repos remotos a los que esta conectado el repo local
+git remote -v
+
+# agregar una direccion remoto (origin)
+git remote add origin myUrl
+
+# modificar una direccion remoto (origin)
+git remote set-url origin myUrl
+```
+
+### Subir y bajar cambios
+
+```
+# bajar cambios
+git pull origin branchNamesubir cambios
+
+# git push origin branchName
+
+# subir cambios de una rama nueva para el remoto
+git push -u origin branchName
+
+# obtener los cambios de una rama remota y cambiarse a esa rama
+
+git fetch && git checkout develop
 ```
 
 ### Áreas de estudio
@@ -714,22 +761,22 @@ Entre menos entendemos un producto, tendrá mayores errores.
 
 **Motivos para probar**
 
-* Reducir costos.
-* Cuidar el prestigio
-* Mejoran la calidad de funcionalidad.
-* Minimizan la posibilidad de malas experiencias de usuario.
+- Reducir costos.
+- Cuidar el prestigio
+- Mejoran la calidad de funcionalidad.
+- Minimizan la posibilidad de malas experiencias de usuario.
 
 **Por qué no se hacen siempre**
 
-* No son parte de la solución.
-* No se entrega evidencia al cliente.
-* Pueden ser difíciles de mantener.
-* No hay tiempo o conocimiento.
+- No son parte de la solución.
+- No se entrega evidencia al cliente.
+- Pueden ser difíciles de mantener.
+- No hay tiempo o conocimiento.
 
 **Metodologías testing**
 
-* TDD.
-* BDD.
+- TDD.
+- BDD.
 
 #### Arquitectura de computadoras
 
@@ -754,33 +801,33 @@ Big Data es un término que describe el gran volumen de datos, tanto estructurad
 
 #### Recursos para estudiar
 
-* [Cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf).
-* [La guía sencilla](https://rogerdudler.github.io/git-guide/index.es.html).
-* [Learning lab](https://lab.github.com/).
-* [Curso de John Mircha node](https://www.youtube.com/watch?v=FeJVdCz_uco&list=PLlrxD0HtieHje-_287YJKhY8tDeSItwtg).
+- [Cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf).
+- [La guía sencilla](https://rogerdudler.github.io/git-guide/index.es.html).
+- [Learning lab](https://lab.github.com/).
+- [Curso de John Mircha node](https://www.youtube.com/watch?v=FeJVdCz_uco&list=PLlrxD0HtieHje-_287YJKhY8tDeSItwtg).
 
 ### Herramientas
 
-* [Ip Pública](https://www.cual-es-mi-ip.net/).
-* [Gitignore.io](https://www.toptal.com/developers/gitignore/).
-* [Coder Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner).
-* [Office Viewer(Markdown Editor)](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office).
-* [Aprende Node.js y Express - Curso desde Cero](https://www.youtube.com/watch?v=1hpc70_OoAg).
-* Documentación Ofline.
-  * [Zeal (Windows)](https://zealdocs.org/download.html).
-  * [Zeal (Linux)](https://zealdocs.org/download.html#linux).
-  * [Dash (MacOS)](https://kapeli.com/dash).
-* [Node.js para backend (en)](https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-backend).
-* [Mintlify Doc Writer (documentador automatico)](https://marketplace.visualstudio.com/items?itemName=mintlify.document).
-* [Metodo patito de goma](https://www.thebrain.school/metodo-patito-goma/#:~:text=Este%20m%C3%A9todo%2C%20incluso%20con%20entrada,pasaba%20inadvertido%20a%20sus%20ojos.).
-*  [Thubder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client).
+- [Ip Pública](https://www.cual-es-mi-ip.net/).
+- [Gitignore.io](https://www.toptal.com/developers/gitignore/).
+- [Coder Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner).
+- [Office Viewer(Markdown Editor)](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office).
+- [Aprende Node.js y Express - Curso desde Cero](https://www.youtube.com/watch?v=1hpc70_OoAg).
+- Documentación Ofline.
+  - [Zeal (Windows)](https://zealdocs.org/download.html).
+  - [Zeal (Linux)](https://zealdocs.org/download.html#linux).
+  - [Dash (MacOS)](https://kapeli.com/dash).
+- [Node.js para backend (en)](https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-backend).
+- [Mintlify Doc Writer (documentador automatico)](https://marketplace.visualstudio.com/items?itemName=mintlify.document).
+- [Metodo patito de goma](https://www.thebrain.school/metodo-patito-goma/#:~:text=Este%20m%C3%A9todo%2C%20incluso%20con%20entrada,pasaba%20inadvertido%20a%20sus%20ojos.).
+- [Thubder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client).
 
 ### Glosario
 
 - **Sistema operativo:** Es el software que coordina y dirige todos los servicios y aplicaciones que utiliza el usuario en una computadora.
 - **Kernel:** El kernel es el núcleo de un sistema operativo y, por tanto, la interfaz (middleware) entre el software y el hardware.
 - **Ip:** La dirección IP es una etiqueta numérica, por ejemplo "192.0.10.1" que identifica, de manera lógica y jerárquica, a una interfaz en la red. Existen IP públicas y IP privadas.
-- **Dominio:**  Es una dirección web compuesta por un nombre de sitio web y una extensión de dominio. Ejemplo: google.com
+- **Dominio:** Es una dirección web compuesta por un nombre de sitio web y una extensión de dominio. Ejemplo: google.com
 - **URL:** Es una dirección web compuesta por al menos el protocolo, dominio y ruta.
 - **DNS:** Es un tipo de servidor de redes de computadora que en encarga de convertir direcciones web en dominios IP y viceversa. Ejemplo: 8.8.8.8 => www.google.com
 - **Cliente:** Es quien solicita información dentro de un sistema informatico.

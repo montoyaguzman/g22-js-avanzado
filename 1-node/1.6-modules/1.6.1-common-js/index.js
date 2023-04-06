@@ -1,18 +1,19 @@
 const operations = require('./functions');
 
 function main() {
-    let numero1 = 10;
-    let numero2 = 40;
 
-    const resultSum = operations.sum(numero1, numero2);
-    const resultSubs = operations.substract(numero1, numero2);
-    const resultMult = operations.multiply(numero1, numero2);
-    const resultDiv = operations.divideNumbers(numero1, numero2);
+    const operando_one = 56;
+    const operando_dos = 4; 
 
-    console.log('suma: ', resultSum);
-    console.log('resta: ', resultSubs);
-    console.log('multiplicacion: ', resultMult);
-    console.log('division: ', resultDiv);
+    const resultSum = operations.sum(operando_one, operando_dos);
+    const resultSubstract = operations.substract(operando_one, operando_dos);
+    const resultMultiply = operations.multiply(operando_one, operando_dos);
+    const resultDivide = operations.divideNumbers(operando_one, operando_dos);
+
+    console.log('resultSum: ', resultSum);
+    console.log('resultSubstract: ', resultSubstract);
+    console.log('resultMultiply: ', resultMultiply);
+    console.log('resultDivide: ', resultDivide);
 
 }
 

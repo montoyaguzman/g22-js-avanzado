@@ -1,21 +1,21 @@
 import { sum, substract } from './modules/sum-substract.js';
-import * as operations from './modules/multipli-divide.js';
+import * as Operations from './modules/multipli-divide.js';
 
 function main() {
-    let numero1 = 10;
-    let numero2 = 40;
 
-    const resultSum = sum(numero1, numero2);
-    const resultSubs = substract(numero1, numero2);
-    const resultMult = operations.multiply(numero1, numero2);
-    const resultDiv = operations.divide(numero1, numero2);
+    const operando_one = 56;
+    const operando_dos = 4; 
 
-    console.log('suma: ', resultSum);
-    console.log('resta: ', resultSubs);
-    console.log('multiplicacion: ', resultMult);
-    console.log('division: ', resultDiv);
+    const resultSum = sum(operando_one, operando_dos);
+    const resultSubstract = substract(operando_one, operando_dos);
+    const resultMultiply = Operations.multiply(operando_one, operando_dos)
+    const resultDivide = Operations.divide(operando_one, operando_dos);
+
+    console.log('resultSum: ', resultSum);
+    console.log('resultSubstract: ', resultSubstract);
+    console.log('resultMultiply: ', resultMultiply);
+    console.log('resultDivide: ', resultDivide);
 
 }
 
 main();
-// <script type="module" src="...."></script>

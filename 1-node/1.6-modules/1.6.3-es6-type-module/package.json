@@ -1,12 +1,12 @@
 {
-  "name": "1.6.3-es6-type-module",
+  "name": "es6-type-module",
   "version": "1.0.0",
-  "description": "",
+  "description": "ejemplo de import/export con es6",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "devf-montoyitag",
+  "type": "module",
+  "author": "devf-montoyita",
   "license": "ISC"
 }
